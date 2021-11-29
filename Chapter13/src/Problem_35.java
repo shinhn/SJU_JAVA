@@ -8,7 +8,7 @@ public class Problem_35 {
 	static class MyGUI extends JFrame {
 		MyGUI() {
 			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-			setTitle("Android ÀÌ¹ÌÁö");
+			setTitle("Android ì´ë¯¸ì§€");
 
 			this.setLayout(new GridLayout(3, 3, 10, 10));
 
