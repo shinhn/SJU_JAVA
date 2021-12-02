@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Ex09_03 {
+
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("문자열 입력 ==> ");
+		String str = s.nextLine();
+		
+		System.out.print("출력 문자열 ==> ");
+		
+		if(!str.startsWith("("))System.out.print("(");
+		System.out.print(str);
+		if(!str.endsWith(")"))System.out.print(")");
+
+	}
+
+}
