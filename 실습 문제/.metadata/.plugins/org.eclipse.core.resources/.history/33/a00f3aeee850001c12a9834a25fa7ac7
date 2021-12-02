@@ -1,0 +1,15 @@
+
+public class Problem_25 {
+
+	public static void main(String[] args) {
+		
+		// 교수님은 int(4byte) 대신 short(2byte) 사용 -> 1 ~ 45까지의 숫자만 사용하므로 큰 메모리가 필요 없기 때문
+		// Math.random() : 0 ~ 1 사이의 숫자가 랜덤하게 리턴 
+		
+		
+		// 범위 : 1 ~ 45
+		
+
+	}
+
+}

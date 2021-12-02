@@ -1,0 +1,16 @@
+
+public class Ex10_04 {
+
+	public static void main(String[] args) {
+		
+		int a = 100;
+		
+		try {
+			if(a==100) throw new Exception("오류")
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+
+	}
+
+}

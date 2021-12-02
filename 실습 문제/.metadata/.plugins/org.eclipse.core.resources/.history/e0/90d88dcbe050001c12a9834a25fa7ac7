@@ -1,0 +1,17 @@
+
+public class Ex09_10 {
+
+	static void coffee_machine(int coffee) {
+		
+		System.out.println("# 1. 뜨거운 물을 준비한다");
+		System.out.println("# 2. 종이컵을 준비한다");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

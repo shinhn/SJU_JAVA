@@ -1,0 +1,12 @@
+// 다중상속 
+// java는 다중상속을 허용하지 않으므로 인터페이스 사용 
+
+
+public class Ex12_11 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

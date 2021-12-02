@@ -1,0 +1,9 @@
+
+public class Ex10_13 {
+
+	public static void main(String[] args) throws Exception {
+		
+		// FileInputStream.write() : 1byte 단위로 파일에 쓰지만 순차적으로 쓰므로 한글이 인식
+	}
+
+}

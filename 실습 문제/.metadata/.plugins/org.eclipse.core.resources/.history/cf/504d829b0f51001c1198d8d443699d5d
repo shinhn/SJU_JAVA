@@ -1,0 +1,10 @@
+
+public class Ex10_15 {
+
+	public static void main(String[] args) {
+		
+		// 파일복사 : (바이트 기반 스트림) FileInputStream, FileOutputStream 사용 
+
+	}
+
+}

@@ -1,0 +1,66 @@
+package ksh;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class KSH_03 {
+	
+	static class myGUI extends JFrame{
+		myGUI(){
+			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			setTitle("Calcurator");
+			
+			JPanel jp1 = new JPanel();
+			JPanel jp2 = new JPanel();
+			
+			jp1.setLayout(null);
+			jp2.setLayout(new GridLayout(4,4,10,10));
+			
+			this.add(jp1, BorderLayout.EAST);
+			this.add(jp2, BorderLayout.SOUTH);
+			
+			JLabel ans = new JLabel();
+			ans.setText("ans");
+			
+			jp1.add(ans);
+			
+			JButton[] btn = new JButton[16];
+			
+			btn[0] = new JButton("7");
+			btn[1] = new JButton("8");
+			btn[2] = new JButton("9");
+			btn[3] = new JButton("+");
+			
+			btn[4] = new JButton("4");
+			btn[5] = new JButton("5");
+			btn[6] = new JButton("6");
+			btn[7] = new JButton("-");
+			
+			btn[8] = new JButton("1");
+			btn[9] = new JButton("2");
+			btn[10] = new JButton("3");
+			btn[11] = new JButton("*");
+			
+			btn[12] = new JButton("0");
+			btn[13] = new JButton("AC");
+			btn[14] = new JButton("=");
+			btn[15] = new JButton("/");
+			
+			for(int i=0;i<16;i++) {
+				jp2.add(btn[i]);
+			}
+			
+			
+			setSize(250, 300);
+			setVisible(true);
+			
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		new myGUI();
+
+	}
+
+}

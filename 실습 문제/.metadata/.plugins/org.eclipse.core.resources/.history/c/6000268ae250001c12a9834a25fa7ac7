@@ -1,0 +1,10 @@
+
+public class Ex09_14 {
+
+	public static void main(String[] args) {
+		
+		System.out.println("계산 입력 (1:+, 2:-, 3:*, 4:/) : ");
+
+	}
+
+}

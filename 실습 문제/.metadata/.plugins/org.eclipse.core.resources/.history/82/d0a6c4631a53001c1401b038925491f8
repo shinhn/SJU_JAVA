@@ -1,0 +1,15 @@
+class Car7{
+	Car7(){
+		System.out.println("슈퍼 클래스 생성자 1 (파라미터 없)");
+	}
+}
+
+
+public class Ex12_03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

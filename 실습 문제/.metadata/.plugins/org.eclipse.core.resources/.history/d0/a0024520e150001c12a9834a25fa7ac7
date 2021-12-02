@@ -1,0 +1,30 @@
+
+public class Ex09_10 {
+
+	static void coffee_machine(int coffee) {
+		
+		System.out.println("# 1. 뜨거운 물을 준비한다");
+		System.out.println("# 2. 종이컵을 준비한다");
+		
+		switch (coffee) {
+		case 1: {
+			System.out.println("# 3. 보통커피를 탄다");
+		}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + coffee);
+		}
+		
+		System.out.println("# 4. 물을 붓는다");
+		System.out.println("# 5. 스푼으로 저어서 녹인다");
+		System.out.println();
+		System.out.println("손님 ~ 커피 여기 있습니다");
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

@@ -1,0 +1,37 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Ex13_12 {
+	static class MyGUI extends JFrame{
+		MyGUI(){
+			// 윈도우 오른쪽 x버튼을 누르면 프로그램 종료 
+			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			// 윈도우 제목 
+			setTitle("이벤트 처리 1");
+			
+			this.setLayout(new FlowLayout());
+			
+			
+			// 텍스트 필드 (x, y 좌표 입력)
+			JTextField txtX = new JTextField(10);
+			JTextField txtY = new JTextField(10);
+			this.add(txtX);
+			this.add(txtY);
+			
+			// 마우스 이벤트의 리스터를 JFrame(this)에 부착 
+			
+			
+			
+			// 윈도우 크기 (픽셀)
+			setSize(200,200);
+			// 윈도우가 화면에 보이게 함
+			setVisible(true);
+		}
+	}
+
+	public static void main(String[] args) {
+		new MyGUI();
+	}
+
+}

@@ -1,0 +1,21 @@
+
+public class Problem_25 {
+	
+	static int getNumbber() {
+		// Math.random() : 0 ~ 1 사이의 숫자가 랜덤하게 리턴 
+		// 숫자 범위 : 1 ~ 45
+		return (int)(Math.random() * 45 + 1);
+	}
+
+	public static void main(String[] args) {
+		
+		// 교수님은 int(4byte) 대신 short(2byte) 사용 -> 1 ~ 45까지의 숫자만 사용하므로 큰 메모리가 필요 없기 때문
+		
+		
+		
+		
+		
+
+	}
+
+}

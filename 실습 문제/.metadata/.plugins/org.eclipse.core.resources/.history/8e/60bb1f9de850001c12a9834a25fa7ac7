@@ -1,0 +1,12 @@
+
+public class Problem_25 {
+
+	public static void main(String[] args) {
+		
+		// 교수님은 int(4byte) 대신 short(2byte) 사용 -> 1~45까지의 숫자만 사용하므로 큰 메모리가 필요 없기 때문
+		
+		
+
+	}
+
+}
