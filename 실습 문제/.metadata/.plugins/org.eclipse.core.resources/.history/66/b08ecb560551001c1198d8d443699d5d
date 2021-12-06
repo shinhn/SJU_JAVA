@@ -1,9 +1,0 @@
-
-public class Ex10_07 {
-
-	public static void main(String[] args) {
-		
-		// next : 공백을 기준으로 단어를 읽음 
-	}
-
-}
