@@ -46,6 +46,7 @@ public class HandPhone {
 			}
 		}
 	}
+	
 	// Ã³À½¿¡ »ç¿ëÀÚÀÇ ¼±ÅÃÀ» À§ÇÑ ¸Ş´º Ãâ·Â
 	static void print_menu() {
 		System.out.printf("\n");
@@ -54,6 +55,7 @@ public class HandPhone {
 		System.out.printf("3. ¿¬¶ôÃ³ »èÁ¦ \n");
 		System.out.printf("4. ³¡³»±â \n");
 	}
+	
 	// ¿¬¶ôÃ³ ÆÄÀÏ¿¡¼­ ±âÁ¸ ÀÔ·ÂµÈ ³»¿ëÀ» ÀĞ¾î¼­ Ãâ·Â
 	static void view_juso() throws IOException {
 		String str = "";
@@ -86,6 +88,7 @@ public class HandPhone {
 
 		br.close();
 	}
+	
 	// Ä£±¸ ¿¬¶ôÃ³¸¦ Ãß°¡
 	static void add_juso() throws IOException {
 		Scanner sc = new Scanner(System.in);
@@ -111,6 +114,7 @@ public class HandPhone {
 
 		bw.close();
 	}
+	
 	// ¿¬¶ôÃ³ ÆÄÀÏ¿¡¼­ ¼±ÅÃÇÑ ¿¬¶ôÃ³¸¦ Á¦°Å
 	static void delete_juso() throws IOException {
 		Scanner sc = new Scanner(System.in);
@@ -158,7 +162,112 @@ public class HandPhone {
 	}
 }
 
+/*
+String str = "...";
 
+//°ø¹é¸¸ ÀÔ·ÂµÈ °æ¿ì
+if(str.replaceAll(" ", "").equals("")) {
+  System.out.println("°ø¹é¸¸ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+}
+
+//Æ¯¼ö¹®ÀÚ°¡ ÀÔ·ÂµÈ °æ¿ì
+String pattern = "^[0-9|a-z|A-Z|¤¡-¤¾|¤¿-¤Ó|°¡-ÆR|\s]*$";
+if(!Pattern.matches(pattern, str)){
+  System.out.println("Æ¯¼ö¹®ÀÚ°¡ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+}
+
+//¹®ÀÚ¿­¿¡ °ø¹é È¤Àº Æ¯¼ö¹®ÀÚ°¡ ÀÔ·ÂµÈ °æ¿ì
+String pattern = "^[0-9|a-z|A-Z|¤¡-¤¾|¤¿-¤Ó|°¡-ÆR]*$";
+if(!Pattern.matches(pattern, str)){
+  System.out.println("°ø¹é È¤Àº Æ¯¼ö¹®ÀÚ°¡ ÀÔ·ÂµÇ¾ú½À´Ï´Ù.");
+}
+*/
+
+/*
+»ıÀÏ ³¯Â¥ Çü½Ä À¯È¿¼º °Ë»ç 
+public class test {
+    public static void main(String[] args) {
+        String exDate1 = "2021/01/01";
+        String exDate2 = "20210101";
+        
+        System.out.println(checkDate(exDate1));
+        System.out.println(checkDate(exDate2));
+    }
+    
+    public static boolean checkDate(String checkDate) {
+        try {
+            SimpleDateFormat dateFormatParser = new SimpleDateFormat("yyyy/MM/dd"); //°ËÁõÇÒ ³¯Â¥ Æ÷¸Ë ¼³Á¤
+            dateFormatParser.setLenient(false); //falseÀÏ°æ¿ì Ã³¸®½Ã ÀÔ·ÂÇÑ °ªÀÌ Àß¸øµÈ Çü½ÄÀÏ ½Ã ¿À·ù°¡ ¹ß»ı
+            dateFormatParser.parse(checkDate); //´ë»ó °ª Æ÷¸Ë¿¡ Àû¿ëµÇ´ÂÁö È®ÀÎ
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+}
+*/
+
+/*
+ÀüÈ­¹øÈ£ Çü½Ä À¯È¿¼º °Ë»ç 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class PhoneNumberValidation {
+
+    public static void main(String[] args) {
+
+        String number = "010-1234-5678";
+        String number2 = "010-123-45678";
+        String number3 = "0101-234-5678";
+
+        validPhoneNumber(number);
+        validPhoneNumber(number2);
+        validPhoneNumber(number3);
+    }
+
+    public static boolean validPhoneNumber(String number) {
+        Pattern pattern = Pattern.compile("\\d{3}-\\d{4}-\\d{4}");
+        Matcher matcher = pattern.matcher(number);
+        if (matcher.matches()) {
+            System.out.println("Valid phone number: " + number);
+            return true;
+        } else {
+            System.out.println("Invalid. Not the form XXX-XXXX-XXX: " + number);
+            return false;
+        }
+    }
+
+}
+*/
+
+/*
+ArrayList<String> arrayList = new ArrayList<>();
+
+arrayList.add("Test1");
+arrayList.add("Test2");
+arrayList.add("Test3");
+
+String[] array = new String[arrayList.size()];
+
+int size=0;
+
+for(String temp : arrayList){
+  array[size++] = temp;
+}
+
+fruits.remove("apple");
+*/
+
+/*
+ÀÌ¸ŞÀÏ Çü½Ä À¯È¿¿Í Ã¼Å© 
+String pattern2 = "^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$";
+String str2 = "abc_123@gmail.com";
+if(Pattern.matches(pattern2, str2)) {
+    System.out.println("¿Ã¹Ù¸¥ ÀÌ¸ŞÀÏ Çü½ÄÀÔ´Ï´Ù. ");
+} else {            
+    System.out.println("¿Ã¹Ù¸¥ ÀÌ¸ŞÀÏ Çü½ÄÀÌ ¾Æ´Õ´Ï´Ù. ");
+}
+*/
 
 
 

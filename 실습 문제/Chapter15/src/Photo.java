@@ -36,6 +36,7 @@ public class Photo extends JFrame {
 		inFp = new File("data/prince.raw");
 		// 읽어올 파일 스트림 (1byte씩 읽음)
 		inFs = new FileInputStream(inFp.getPath());
+		
 		// 위의 4 라인을 한 줄로 코딩하면 아래와 같음
 		// FileInputStream inFs = new FileInputStream(new File("data/prince.raw"));
 

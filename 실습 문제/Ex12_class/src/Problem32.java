@@ -1,0 +1,13 @@
+class Pet{
+	int age; // 
+}
+
+
+public class Problem32 {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
